@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border-style: none;  
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font: 400 15px Roboto, sans-serif;
+}
+
+
+body:not(#LeftSideMenu){
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+
+header{
+    height: 176px;
+    text-align: center;
+    line-height: 175px;
+}
+
+/* Menu CSS */
+#check,#btn{ display: none; }
+
+#menu{
+    width:100%;
+    display: flex; 
+    background-color: orangered;
+    justify-content: center;
+}
+
+nav, nav a{ 
+    background: orangered;
+}
+
+
+li{
+    height: 100%;
+    float: left;
+    margin: 15px;
+}
+
+li a{
+    text-decoration: none;
+    padding: 15px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 12pt;
+}
+
+a:hover{ background: rgba(225,225,225,0.3); }
+
+.fixo{
+    top:0px;
+    z-index: 5;
+    position: fixed;
+}
+
+.drop{
+    top: 32px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+    text-align: left;
+    position: absolute;
+
+}
+
+.drop p { width: 100%; }
+
+.drop p a{ width: 120px; }
+
+.drop a{ display: inline-block; }
+
+.dropdown{ position: relative; }
+
+.dropdown:hover .drop{ display: inline-flex; }
+
+@media (max-width:700px){
+   nav ul{
+        margin-left: 0px;
+        display: none;
+    }
+    
+    li{ clear: both; }
+    
+
+    
+    #btn{ display: block; }
+    
+    #check:checked ~ #menu ul{ display: block; }
+    
+    #menu{ text-align: left; }
+    
+  
+}
+
+.svg-icon {
+  width: 3em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle { stroke: white; }
+
+a:active, a { color: black; }
+
+/* Left menu */
+.leftmenu {
+    width: auto;
+    height: 100%;
+    max-width: 200px;
+    margin: 5px 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.categorias-titulo {
+    width: auto;
+    background-color: red;
+    margin: 10px 5px 0px 0px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.leftmenu p:not(.categorias-titulo) { 
+    padding: 0px 10px; 
+    margin: 5px 0px;  
+}
+
+.leftmenu a:hover { color: red; }
+
+.leftmenu{
+    border: 1px solid rgba(87, 87, 87, 0.945);
+    border-radius: 5px;
+}

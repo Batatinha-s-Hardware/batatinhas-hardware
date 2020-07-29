@@ -116,11 +116,13 @@ th{
     background: white;
     width: 95%;
     height: 95%;
-  overflow: scroll; 
+  overflow-y: scroll;
     z-index: 10;
     transition: 200ms ease-in-out;  
     overflow-x: hidden;
     padding: 5px;
+    scrollbar-color: rgba(0,0,0,0.8) transparent ;
+    scrollbar-width: thin;
 }
 
 /*Estilizando a scrollbar do modal */
@@ -147,19 +149,6 @@ th{
 }
 
 .modal::-o-scrollbar-thumb:hover{
-    background:rgba(0,0,0,0.8);
-}
-
-.modal::-moz-scrollbar{
-    width: 5px;
-}
-.modal::-moz-scrollbar-thumb{
-    width: 5px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 20px;
-}
-
-.modal::-moz-scrollbar-thumb:hover{
     background:rgba(0,0,0,0.8);
 }
 

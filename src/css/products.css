@@ -27,7 +27,7 @@ caption{
 #layout-block-content {
     width: 100%;
     display: flex;
-    background-color: #fff;
+    background-color:;
     padding: 10px 10px 10px 5px;
 }
 
@@ -116,16 +116,19 @@ th{
     background: white;
     width: 95%;
     height: 95%;
-  overflow: scroll; 
+  overflow-y: scroll;
     z-index: 10;
     transition: 200ms ease-in-out;  
     overflow-x: hidden;
     padding: 5px;
+    scrollbar-color: rgba(0,0,0,0.8) transparent ;
+    scrollbar-width: thin;
 }
 
 /*Estilizando a scrollbar do modal */
 .modal::-webkit-scrollbar{
     width: 5px;
+    
 }
 .modal::-webkit-scrollbar-thumb{
     width: 5px;
@@ -150,18 +153,7 @@ th{
     background:rgba(0,0,0,0.8);
 }
 
-.modal::-moz-scrollbar{
-    width: 5px;
-}
-.modal::-moz-scrollbar-thumb{
-    width: 5px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 20px;
-}
 
-.modal::-moz-scrollbar-thumb:hover{
-    background:rgba(0,0,0,0.8);
-}
 
 .modal::-ms-scrollbar{
     width: 5px;

@@ -46,20 +46,30 @@
            <div class="slideshow"> 
                <div class="slideshow-images"> 
                 <div class="tela_pc">
+                    <img class="slide_init" src="./home_img/slide/img1.jpg">
+                    <img class="slide_outs"  src="./home_img/slide/img3.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img4.jpg">
+                     <img class="slide_outs" src="./home_img/slide/img5.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img2.jpg">
+                </div> 
+                <div class="tela_pc">
+                       <img class="slide_init" src="./home_img/slide/img2.jpg">
+                    <img class="slide_outs"  src="./home_img/slide/img1.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img3.jpg">
+                     <img class="slide_outs" src="./home_img/slide/img4.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img5.jpg">
 
                 </div> 
                 <div class="tela_pc">
-
-                </div> 
-                <div class="tela_pc">
-
+                      <img class="slide_init" src="./home_img/slide/img5.jpg">
+                    <img class="slide_outs"  src="./home_img/slide/img2.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img1.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img3.jpg">
+                    <img class="slide_outs" src="./home_img/slide/img4.jpg">
                </div>
               </div>
                <div class="legend">
                    <div id="lg-background">
-                        <div class="dotted"></div>
-                        <div class="dotted"></div>
-                        <div class="dotted"></div>
                         <div class="dotted"></div>
                         <div class="dotted"></div>
                         <div class="dotted"></div>
@@ -73,7 +83,19 @@
     
      <div id="sobre">
                 <h1>Sobre</h1>
-               rjnfjkrnfjenfjnejrnfjernfjenrf
+                <p>Cansado de ter problemas com seu celular?
+                        <br>
+        Acabou de entrar no ramo home office e precisa de equipamentos necessários ?
+                    </p>
+                    <p>Venha conhecer nossa empresa é especializada  em tipos de equipamentos eletrônicos celulares, notebooks ,tabletes, desktops, e equipamentos de hardware como  monitores , cabos , headsets.
+                    </p>
+                    <br>
+                    <h1>QUEM SOMOS NÓS</h1>
+                    <br>
+                    <p>Nossa empresa esta no mercado a cerca de 5 anos sempre fomos uma empresa uma empresa por nossos valores de parceria com nossos clientes, nossa honestidade com os preços de nossos produtos , e nossa dedicação em sempre trazer o que a de melhor.
+                    </p>
+                    <p>Nossos produtos têm garantia estendida por 2 anos incluindo assistência técnica , roubo, e defeito de fábrica. 
+                    </p> 
          
             </div>
 
@@ -92,6 +114,303 @@
                   }
           });     
      });
+            
+             var c=0;
+            window.addEventListener("load", slideshow());
+
+      
+        function slideshow(){
+           
+
+            
+            c++;
+            
+           if(c==1){    
+               
+            document.querySelectorAll(".slide_init")[0].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[0].style.transform="translateX(0px)";
+               
+               
+                document.querySelectorAll(".slide_init")[1].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[1].style.transform="translateX(0px)";
+               
+                document.querySelectorAll(".slide_init")[2].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[2].style.transform="translateX(0px)";
+               
+                 document.querySelectorAll(".slide_init")[0].style.transition="all 2s";
+               document.querySelectorAll(".slide_init")[1].style.transition="all 2s";
+               document.querySelectorAll(".slide_init")[2].style.transition="all 2s";
+               // c++;
+         
+            }else if(c==2){
+                
+                
+             document.querySelectorAll(".slide_init")[0].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_init")[0].style.opacity="0";
+               
+                
+             document.querySelectorAll(".slide_init")[1].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_init")[1].style.opacity="0";
+            
+                            
+             document.querySelectorAll(".slide_init")[2].style.transform="translateX(500px)";
+            
+            document.querySelectorAll(".slide_init")[2].style.opacity="0";
+                
+                
+            //--------------------------------------------
+                
+            document.querySelectorAll(".slide_outs")[0].style.transform="translateX(0px)";
+                
+            document.querySelectorAll(".slide_outs")[0].style.opacity="1";
+               
+                
+             document.querySelectorAll(".slide_outs")[4].style.transform="translateX(0px)";
+             document.querySelectorAll(".slide_outs")[4].style.opacity="1";
+            
+                            
+             document.querySelectorAll(".slide_outs")[8].style.transform="translateX(0px)";
+            
+            document.querySelectorAll(".slide_outs")[8].style.opacity="1";
+                
+                
+     
+                
+              // c++;
+        
+            }else if(c==3){
+                
+              document.querySelectorAll(".slide_outs")[0].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_outs")[0].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[0].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[4].style.transform="translateX(500px)";
+             document.querySelectorAll(".slide_outs")[4].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[4].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[8].style.transform="translateX(500px)";
+            
+            document.querySelectorAll(".slide_outs")[8].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[8].style.transition="all 2s";
+                
+            //-----------------------------------------
+                
+           document.querySelectorAll(".slide_outs")[1].style.transform="translateX(0px)";
+                
+            document.querySelectorAll(".slide_outs")[1].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[1].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[5].style.transform="translateX(0px)";
+             document.querySelectorAll(".slide_outs")[5].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[5].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[9].style.transform="translateX(0px)";
+            
+            document.querySelectorAll(".slide_outs")[9].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[9].style.transition="all 2s";
+                
+                
+             // agora vamos voltar para -500 as classes slide_init e as ultimas slide_outs
+              
+             document.querySelectorAll(".slide_init")[0].style.transform="translateX(-500px)";
+                document.querySelectorAll(".slide_init")[1].style.transform="translateX(-500px)";
+                document.querySelectorAll(".slide_init")[2].style.transform="translateX(-500px)";
+            
+                
+            document.querySelectorAll(".slide_outs")[3].style.transform="translateX(-500px)";
+            document.querySelectorAll(".slide_outs")[7].style.transform="translateX(-500px)";
+            document.querySelectorAll(".slide_outs")[11].style.transform="translateX(-500px)";
+                
+            //------------------------------------
+                
+              //  c++;
+        
+            }else if(c==4){
+                
+            document.querySelectorAll(".slide_outs")[1].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_outs")[1].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[1].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[5].style.transform="translateX(500px)";
+             document.querySelectorAll(".slide_outs")[5].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[5].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[9].style.transform="translateX(500px)";
+            
+            document.querySelectorAll(".slide_outs")[9].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[9].style.transition="all 2s";
+            //--------------------------------------
+                    
+           document.querySelectorAll(".slide_outs")[2].style.transform="translateX(0px)";
+                
+            document.querySelectorAll(".slide_outs")[2].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[2].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[6].style.transform="translateX(0px)";
+             document.querySelectorAll(".slide_outs")[6].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[6].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[10].style.transform="translateX(0px)";
+            
+            document.querySelectorAll(".slide_outs")[10].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[10].style.transition="all 2s";
+                
+            }else if(c==5){
+                
+            document.querySelectorAll(".slide_outs")[2].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_outs")[2].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[2].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[6].style.transform="translateX(500px)";
+             document.querySelectorAll(".slide_outs")[6].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[6].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[10].style.transform="translateX(500px)";
+            
+            document.querySelectorAll(".slide_outs")[10].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[10].style.transition="all 2s";
+            //--------------------------------------
+                    
+           document.querySelectorAll(".slide_outs")[3].style.transform="translateX(0px)";
+                
+            document.querySelectorAll(".slide_outs")[3].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[3].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[7].style.transform="translateX(0px)";
+             document.querySelectorAll(".slide_outs")[7].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[7].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[11].style.transform="translateX(0px)";
+            
+            document.querySelectorAll(".slide_outs")[11].style.opacity="1";
+                
+             document.querySelectorAll(".slide_outs")[11].style.transition="all 2s";
+                
+            }
+            
+            
+            
+       
+         
+            
+
+            
+            
+            //Condção para resetar o slide
+            
+            if(c>5){
+                c=1;
+                
+                              
+           document.querySelectorAll(".slide_outs")[3].style.transform="translateX(500px)";
+                
+            document.querySelectorAll(".slide_outs")[3].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[3].style.transition="all 2s";
+               
+                
+             document.querySelectorAll(".slide_outs")[7].style.transform="translateX(500px)";
+             document.querySelectorAll(".slide_outs")[7].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[7].style.transition="all 2s";
+            
+                            
+             document.querySelectorAll(".slide_outs")[11].style.transform="translateX(500px)";
+            
+            document.querySelectorAll(".slide_outs")[11].style.opacity="0";
+                
+             document.querySelectorAll(".slide_outs")[11].style.transition="all 2s";
+            //----------------------------------------
+                
+             //As imagens vão voltar pra -500 com exceção da class slide_init
+                
+            document.querySelectorAll(".slide_outs")[0].style.transform="translateX(-500px)";
+                
+             document.querySelectorAll(".slide_outs")[1].style.transform="translateX(-500px)";
+                
+              document.querySelectorAll(".slide_outs")[2].style.transform="translateX(-500px)";
+                                
+              document.querySelectorAll(".slide_outs")[4].style.transform="translateX(-500px)";
+                
+              document.querySelectorAll(".slide_outs")[5].style.transform="translateX(-500px)";
+                
+              document.querySelectorAll(".slide_outs")[6].style.transform="translateX(-500px)";
+                
+              document.querySelectorAll(".slide_outs")[8].style.transform="translateX(-500px)";
+            
+              document.querySelectorAll(".slide_outs")[9].style.transform="translateX(-500px)";
+                
+              document.querySelectorAll(".slide_outs")[10].style.transform="translateX(-500px)";
+                
+            //------------------------------------
+                
+            //E exibimos os slide_init novamente
+                
+            document.querySelectorAll(".slide_init")[0].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[0].style.transform="translateX(0px)";
+               
+               
+                document.querySelectorAll(".slide_init")[1].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[1].style.transform="translateX(0px)";
+               
+                document.querySelectorAll(".slide_init")[2].style.opacity="1";
+                
+             document.querySelectorAll(".slide_init")[2].style.transform="translateX(0px)";
+               
+                 document.querySelectorAll(".slide_init")[0].style.transition="all 2s";
+               document.querySelectorAll(".slide_init")[1].style.transition="all 2s";
+               document.querySelectorAll(".slide_init")[2].style.transition="all 2s";
+                
+           //--------------------------------
+                
+            }              
+               
+      
+         }
+            
+     
+            
+            
+        setInterval(slideshow,5000);
     </script>
     </body>
 </html>

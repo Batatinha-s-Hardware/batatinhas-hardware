@@ -36,6 +36,11 @@ header{
     overflow: hidden;
     border: 25px inset black;
     margin-top: 100px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
 }
 
 .tela_pc:nth-child(1){
@@ -54,8 +59,27 @@ header{
     transform-origin:left;
     border-color:rgba(0,0,0,0.7);
      width: 200px;
-
 }
+
+.tela_pc img{
+    height: 210px;
+    position: absolute;
+    transition: transform 2s;
+}
+
+.tela_pc:nth-child(1) img,.tela_pc:nth-child(3) img {
+    height: 130px;
+}
+
+.slide_init{transform: translateX(0px);}
+
+.slide_outs{
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+
+
 .slideshow-images{
     display: flex;
     width: 100%;
@@ -83,9 +107,12 @@ header{
     border: 1px solid black;
     background: white;
     margin: auto;
-        margin-top: 200px;
+    margin-top: 200px;
+    padding: 5px;
 
 }
+
+#sobre p{margin-left: 5px; margin-right: 5px; margin-top: 5px;}
 
 #sobre h1{
     text-align: center;
@@ -154,6 +181,8 @@ a:hover{ background: rgba(225,225,225,0.3); }
     position: absolute;
 
 }
+
+
 
 #conteudo{
     width: 100%;
@@ -237,11 +266,12 @@ a:active, a { color: black; }
     overflow: hidden;
     position: relative;
     background-color: white;
+    color:#edf5c2;
 }
 
 .categorias-titulo {
     width: auto;
-    background-color: red;
+    background-color: #293d3e;
     margin: 10px 5px 0px 0px;
     border-radius: 0px 50px 50px 0px;
 }

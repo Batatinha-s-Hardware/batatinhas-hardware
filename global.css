@@ -15,7 +15,7 @@ html{height: 100%; }
 body:not(#LeftSideMenu){
     height: 100%;
     background-color: white; 
-    background-image: url(./home_img/auxiliar4.png);
+    background-image: url(./assets/home_img/auxiliar4.png);
     background-attachment: fixed;
 }
 
@@ -25,7 +25,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url(./home_img/logo_roxo_final.png), url(./home_img/head_sem_logo_.png);
+    background-image:url(./assets/home_img/logo_roxo_final.png), url(./assets/home_img/head_sem_logo_.png);
     background-size: 170px, cover;
     background-repeat: no-repeat;
     background-position: center center;

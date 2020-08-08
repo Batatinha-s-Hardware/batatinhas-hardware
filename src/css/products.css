@@ -4,30 +4,37 @@
     margin: 0px auto;
     display: none;
 }
-table{display: none;  margin-top: 50px; margin-left: 10px;}
-table,td,th{
-    border-collapse: collapse;
-}
+table{
+    display: none;  
+    margin-top: 50px; 
+    margin-left: 10px;}
 
-td{word-break: break-all;}
+table, td, th{ border-collapse: collapse; }
+
+td{ word-break: break-all; }
+
 td,th{
     text-align: left;
     padding: 5px;
     border: 1px solid black;
-
 }
-th{width: 40%;}
+
+th{ 
+    width: 40%;
+    background: #ccc; 
+}
+
 caption{
+    color: #4527a0;
+    font-weight: bold;
+    font-size: 14pt;
     text-align: left;
-    
-    
 }
 #logo img{ width: 100%; }
 
 #layout-block-content {
     width: 100%;
     display: flex;
-    background-color:;
     padding: 10px 10px 10px 5px;
 }
 
@@ -38,7 +45,9 @@ caption{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem 0rem;
+    padding: 0 0.1rem ;
+    border: 1px solid rgba(87, 87, 87, 0.945);
+    border-radius: 5px;
 }
 
 .product-content {
@@ -48,19 +57,28 @@ caption{
     grid-template-rows: 173px 150px;
     width: calc(200px - 1px);
     overflow: hidden;
-    margin: 10px 2rem;
+    margin: 0.5rem 0.4rem;
     padding: 15px 10px;
     transition: transform 1s;
     cursor: pointer;
     border:1px solid #ccc;
     border-radius: 5px;
-    height: 350px;
+    height: 365px;
     
 }
 
 .product-content img {
     grid-area: card-img;
     width: auto;
+    height: 80%;
+} 
+
+.product-content .images #img_amost {
+    grid-area: card-img;
+    display: flex;
+    margin: auto;
+    width: auto;
+    max-width: 160px;
     height: 80%;
 } 
 
@@ -72,39 +90,20 @@ caption{
 
 
 .info .tech-specifications{
-    margin-top: 13px;
+    margin: auto;
     font-size: 9pt;
 }
 
 .product-content:hover{
-    box-shadow: 1px 1px 1px 1px #ff4500;
-    border: 1px solid #ff4500;
+    box-shadow: 1px 1px 1px 1px #293d3e;
+    border: 1px solid #293d3e;
     transform: scale(1.01);
-}
-
-
-#produtcs-container{
-    border: 1px solid rgba(87, 87, 87, 0.945);
-    border-radius: 5px;
 }
 
 .info .preco::before{
     content: "R$ ";
     color: green;
 }
-
-caption{
-    color: #4527a0;
-    font-weight: bold;
-    font-size: 14pt;
-}
-
-th{
-    background: #ccc;
-    
-}
-
-
 
 /* Modal CSS */
 .modal {
@@ -116,7 +115,7 @@ th{
     background: white;
     width: 95%;
     height: 95%;
-  overflow-y: scroll;
+    overflow-y: scroll;
     z-index: 10;
     transition: 200ms ease-in-out;  
     overflow-x: hidden;
@@ -126,47 +125,22 @@ th{
 }
 
 /*Estilizando a scrollbar do modal */
-.modal::-webkit-scrollbar{
-    width: 5px;
-    
-}
-.modal::-webkit-scrollbar-thumb{
-    width: 5px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 20px;
-}
-
-.modal::-webkit-scrollbar-thumb:hover{
-    background:rgba(0,0,0,0.8);
-}
-
-.modal::-o-scrollbar{
-    width: 5px;
-}
-.modal::-o-scrollbar-thumb{
-    width: 5px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 20px;
-}
-
-.modal::-o-scrollbar-thumb:hover{
-    background:rgba(0,0,0,0.8);
-}
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 992e48128fb6806c22853fce922fa039e6d81caf
+.modal::-webkit-scrollbar, 
+.modal::-o-scrollbar,
 .modal::-ms-scrollbar{
     width: 5px;
 }
+
+.modal::-webkit-scrollbar-thumb,
+.modal::-o-scrollbar-thumb,
 .modal::-ms-scrollbar-thumb{
     width: 5px;
     background: rgba(0,0,0,0.5);
     border-radius: 20px;
 }
 
+.modal::-webkit-scrollbar-thumb:hover,
+.modal::-o-scrollbar-thumb:hover,
 .modal::-ms-scrollbar-thumb:hover{
     background:rgba(0,0,0,0.8);
 }
@@ -228,10 +202,7 @@ button { cursor: pointer; }
     margin-top: 10px;
 }
 
-.img_invisible:hover{
-         box-shadow: 5px 5px 5px #ccc;
-
-}
+.img_invisible:hover{ box-shadow: 5px 5px 5px #ccc; }
 
 .content .images {
     width: 450px;
@@ -272,8 +243,6 @@ button { cursor: pointer; }
     width: 100%;
 }
 
-
-
 .content .info .tech-specifications {
     font-size: 12pt;
     margin-top: 30px;
@@ -292,27 +261,21 @@ button { cursor: pointer; }
         margin-top: 20px    
     }
     
-    .content .info p{
-        margin:10px
-    }
+    .content .info p{ margin:10px }
     
-    .content .images {
-    width: 100%;
- 
-}
-   
-    
-
-        
+    .content .images { width: 100%; }
+         
 } 
 
 @media(max-width:500px){
 
     #logo{ width: 95%; }
+
+    #produtcs-container { padding: 0.2rem; }
+    
+    .product-content { margin: 0.5rem auto; }
     
 }
 
-object{
-  height: 100vh;
-}
+object{ height: 100vh; }
 

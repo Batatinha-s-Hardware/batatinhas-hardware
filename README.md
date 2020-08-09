@@ -3,7 +3,7 @@
 Projeto de Web Design do 2ª semestre em Técnico em TI, oferecido pela escola [Prof.ª Alcina Dantas Feijão](http://www.alcinadantas.com.br/ti)
 e com a cordenação do docente ***Nilson Tadami Saito***.
 
-## Os objetivos deste projeto são: 
+## Os objetivos deste projeto 
 
 Criar um site de uma empresa fictícia composta por pelo menos 3 páginas HTML e seu respectivo CSS.
 - Trabalho em grupo de 4 ou 5 alunos.

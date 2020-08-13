@@ -1,7 +1,6 @@
 # batatinha-s-hardware-project
 
-Projeto de Web Design do 2ª semestre em Técnico em TI, oferecido pela escola [Prof.ª Alcina Dantas Feijão](http://www.alcinadantas.com.br/ti)
-e com a cordenação do docente ***Nilson Tadami Saito***.
+Projeto de Web Design do 2ª semestre em Técnico em TI, oferecido pela escola [Prof.ª Alcina Dantas Feijão](http://www.alcinadantas.com.br/ti).
 
 ## Os objetivos deste projeto 
 

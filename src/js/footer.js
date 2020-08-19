@@ -105,6 +105,8 @@ for(let items of classProfile){
 }
 
 checkbox = document.getElementById("checkGit"); 
+checkbox.checked = false;
+
 gitLogo = document.querySelectorAll("label[for='checkGit'] img")[0]; 
 
 checkbox.addEventListener("click", (event) => {
@@ -147,13 +149,3 @@ checkbox.addEventListener("click", (event) => {
         }
     }
 });
-
-defaultState()
-
-function defaultState(){
-    checkbox.checked = false;
-}
-
-
-
- 

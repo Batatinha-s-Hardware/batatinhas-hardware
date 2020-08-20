@@ -25,7 +25,9 @@
                         </svg>
                     </label>
                     <ul>
-                        <li class="dropdown"><a href="./src/Peripherals/Sound.html" target="_top">Produtos</a>
+
+                        <li class="dropdown"><a href="./src/html/Peripherals/Sound.html" target="_top">Produtos</a>
+
                      
                         </li>
                         <li class="dropdown"><a href="#" target="_top">Assistência</a>
@@ -46,6 +48,7 @@
            <div class="slideshow"> 
                <div class="slideshow-images"> 
                 <div class="tela_pc">
+
                  <a target="_self" href="./src/Computers/Notbooks.html">
                     <img class="slide1" src="./assets/home_img/slide/img1.jpg"></a>
                     
@@ -151,6 +154,7 @@
                     
                     <a target="_self" href="./src/HardWare/Coolers.html">
                         <img class="slide3" src="./assets/Peripherals/Cooler/CRS/Corsair.jpg"></a>
+                  
                </div>
               </div>
                <div class="legend">
@@ -197,16 +201,13 @@
             
      $(function(){
            $(window).scroll(function(){
-         if($(this).scrollTop() > 176 && $(window).width()>600){
+         if($(this).scrollTop() > 170 && $(window).width()>600){
             $("#menu").addClass("fixo");
         }else{
             $("#menu").removeClass("fixo");
                   }
-         });
-      
-    
-     
- });
+          });     
+     });
             
              var c=0;
              var limite=document.querySelectorAll(".slide2").length;
@@ -323,12 +324,8 @@
             
             
             //---------------
-      
          }
-            
-     
-            
-            
+
         tmp=setInterval(slideshow,5000);
     </script>
     </body>

@@ -5,7 +5,7 @@
     border-style: none;  
     text-decoration: none;
     list-style-type: none;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font: 400 15px Roboto, sans-serif;
 }
 
@@ -29,8 +29,11 @@ header{
     background-size: 170px, cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color:#223330;
+
 }
 .tela_pc{
+    box-sizing: border-box;
     width: 350px;
     height: 260px;
     overflow: hidden;
@@ -40,7 +43,6 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
-    align-items: center;
 }
 
 .tela_pc:nth-child(1){
@@ -48,10 +50,24 @@ header{
     transform-origin:right;
     border-color:rgba(0,0,0,0.7);
     width: 200px;
+    align-items: center;
 }
 
 .tela_pc:nth-child(2){
     width: 560px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela_pc:nth-child(1) a{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tela_pc:nth-child(2) a{
+    justify-content: center;
+    align-items: center;
 }
 
 .tela_pc:nth-child(3){
@@ -59,28 +75,56 @@ header{
     transform-origin:left;
     border-color:rgba(0,0,0,0.7);
      width: 200px;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.tela_pc:nth-child(3) a{
+    justify-content: center;
+    align-items: center;
+}
+
+.tela_pc a{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
 
 .tela_pc img{
     height: 210px;
     position: absolute;
-    transition: transform 2s;
+    opacity: 0;
 }
 
 .tela_pc:nth-child(1) img,.tela_pc:nth-child(3) img {
     height: 130px;
 }
 
-.slide_init{transform: translateX(0px);}
+.slide1,.slide2,.slide3{transform: translateX(-500px);}
 
-.slide_outs{
-    transform: translateX(-300px);
+
+.slide1.most,.slide2.most,.slide3.most{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 2s;
+}
+
+.slide1.past,.slide2.past,.slide3.past{
+    transform: translateX(500px);
     opacity: 0;
+    transition: all 2s;
+
 }
 
 
+.tela_pc img:hover{
+ transform: scale(1.04);
+}
 
 .slideshow-images{
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -129,7 +173,12 @@ header{
     height: 10px;
     border-radius: 100%;
     margin:0px 5px;
+    cursor: pointer;
 }
+
+.dotted.active{background: grey;}
+
+
 header img{
     width: auto;
     height: 150px;
@@ -150,13 +199,13 @@ nav, nav a{
 }
 
 
-li{
+nav li{
     height: 100%;
     float: left;
     margin: 15px;
 }
 
-li a{
+nav li a{
     text-decoration: none;
     padding: 15px;
     font-family: sans-serif;
@@ -164,7 +213,7 @@ li a{
     font-size: 12pt;
 }
 
-a:hover{ background: rgba(225,225,225,0.3); }
+nav li a:hover{ background: rgba(225,225,225,0.3); }
 
 .fixo{
     top:0px;
@@ -184,7 +233,7 @@ a:hover{ background: rgba(225,225,225,0.3); }
 
 
 
-#conteudo{
+#conteudo{box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -218,15 +267,40 @@ a:hover{ background: rgba(225,225,225,0.3); }
     
     #menu{ text-align: left; }
     
+    
+    .tela_pc{
+    height: 230px;
+ 
+}
+
+.tela_pc:nth-child(1){
+
+    width: 200px;
+}
+
+.tela_pc:nth-child(2){
+    width: 260px;
+}
+
+.tela_pc:nth-child(3){
+     width: 200px;
+
+ }
+   
+
+.tela_pc:nth-child(2) img{
+    height: 180px;
+}
+    
+    
+    
   
 }
 
 @media(max-width:600px){
     .tela_pc{
-    height: 200px;
- 
+    height: 200px; 
 }
-
 .tela_pc:nth-child(1){
 
     width: 160px;
@@ -240,6 +314,17 @@ a:hover{ background: rgba(225,225,225,0.3); }
      width: 160px;
 
  }
+    
+   .tela_pc:nth-child(2) img{
+    height: 150px;
+  }
+    
+    .tela_pc:nth-child(1) img{
+    height: 100px;
+  }
+    .tela_pc:nth-child(3) img{
+    height: 100px;
+  }
 }
 .svg-icon {
   width: 3em;
@@ -288,12 +373,139 @@ a:active, a { color: black; }
     border-radius: 5px;
 }
 
+/* Footer */
 footer{
-    background:linear-gradient(to right, black 50%, transparent);
-    width: 100%;
-    height: 50px;
+    background:#223330;
+    width: auto;
+    height: auto;
     margin-top:100px;
     color: white;
     font-size: 12px;
     line-height: 50px;
+    padding:  2em 5em;
 }
+
+footer ul{ height: 100%; }
+
+footer ul , #Logo, .siga, 
+.collaborators, .collaborators a{ display: flex; }
+
+footer ul , #Logo{ justify-content: space-between; }
+
+#Logo, .siga, .collaborators,
+.collaborators a{ align-items: center; }
+
+#Logo img{
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+}
+
+footer ul li .footer-link-content a{
+    display: block;
+    width: auto;
+}
+
+footer ul li:nth-child(3) .footer-link-content a{ width: auto; }
+
+footer ul li:nth-child(3) h3{ margin-bottom: 10px; }
+
+footer ul li:nth-child(2) .footer-link-content p{ margin-top: 10px; }
+
+footer ul li:last-child{ margin: 0 8rem 0 0; }
+
+footer ul li .footer-link-content a:hover{ color: #fe42e0; }
+
+#checkGit{ display: none; }
+
+label[for="checkGit"], #checkGit { 
+    right: 215px;
+    cursor: pointer;
+ }
+
+label[for="checkGit"] img:hover{ opacity: 1; }
+
+label[for="checkGit"] img{
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+    border-radius: 70%;
+}
+
+#container-git-collaborators{
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    padding: 0 0 0 5px;
+    transition: all 0.5s;
+}
+ 
+#git-collaborators-list{ margin: 0 15px 0 20px; }
+
+.collaborators{
+    height: 50px;
+    margin: 2px 0;
+}
+
+.collaborators a{
+    position: absolute;
+    transform: scale(0);
+    margin: 5px;
+    padding: 5px;
+    width: 25px;
+    border-radius: 40px;
+    background-color: #171516;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+.collaborators a:hover{
+    cursor: pointer;
+    width: 170px;
+    background-color: #1f1c1d;
+}
+
+.collaborators img{
+    transition: all 1s;
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 15px;
+}
+
+.collaborators p{ 
+    margin: 0 0 0 10px;
+    color: white;
+    display: none;
+ }
+
+@media(max-width: 600px){
+
+    footer ul , #Logo{ 
+        flex-direction: column;
+        align-items: center;
+     }
+
+    footer ul li{ margin: 0 0 3rem 0;}
+    
+    footer ul li:nth-child(3){ margin: 0 20px 3rem 0; }
+    
+    footer ul li:last-child{ margin: 0 2rem 0 0; }
+
+ }
+
+@media(max-width: 990px){
+
+    footer ul , #Logo{ 
+        flex-direction: column;
+        align-items: center;
+     }
+
+    footer ul li{ margin: 0 0 3rem 0;}
+    
+    footer ul li:nth-child(3){ margin: 0 20px 3rem 0; }
+    
+    footer ul li:last-child{ margin: 0 2rem 0 0; }
+
+ }

@@ -81,6 +81,9 @@ for(let items of classProfile){
         
         idProfile = event.target.id; // Catch the id that mouse's over.
 
+        imageProfile[idProfile].style.width="35px";
+        imageProfile[idProfile].style.height="35px";
+
         /* Verify if one of the contentProfile need a display change. */
         for(let items of contentProfile){
             items.addEventListener("transitionend", event => {
@@ -88,18 +91,28 @@ for(let items of classProfile){
                     nameProfile[idProfile].style.display="none"; 
                 }else if(items.offsetWidth == 180){ 
                     nameProfile[idProfile].style.display="flex";
-
                 }
             });
 
             /* While the transition in running the display must be none. */ 
-            items.addEventListener("transitionrun", event => { 
+            items.addEventListener("transitionrun", event => {
                 for(let i = 0; i < 4; i++){
                     nameProfile[i].style.display="none";
                 } 
             });
             
         }
+
+    });
+}
+
+for(let items of classProfile){
+    items.addEventListener("mouseout", (event) => {
+        
+        idProfile = event.target.id; // Catch the id that mouse's over.
+
+        imageProfile[idProfile].style.width="25px"
+        imageProfile[idProfile].style.height="25px"
 
     });
 }
@@ -111,7 +124,7 @@ gitLogo = document.querySelectorAll("label[for='checkGit'] img")[0];
 
 checkbox.addEventListener("click", (event) => {
 
-    /* This part just make hover works better. */
+    /* This part just make hover on gitlogo works better. */
     gitLogo.addEventListener("mouseout", eventOpacityout => { opacityChanger("0.5"); });
     gitLogo.addEventListener("mouseover", eventOpacityover => { opacityChanger("1"); });
 

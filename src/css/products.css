@@ -1,7 +1,5 @@
 /* Products CSS */
-* {
-    box-sizing: border-box; 
-}
+* { box-sizing: border-box; }
 
 #logo{
     width: 80vw;

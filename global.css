@@ -145,6 +145,7 @@ header{
     display: flex;
     justify-content: center;
     border-radius: 100% 100% 0 0; 
+    -webkit-border-radius: 100% 100% 0 0; 
 }
 #sobre{
     width: 80%;
@@ -172,6 +173,7 @@ header{
     width: 10px;
     height: 10px;
     border-radius: 100%;
+    -webkit-border-radius: 100%;
     margin:0px 5px;
     cursor: pointer;
 }
@@ -359,6 +361,7 @@ a:active, a { color: black; }
     background-color: #293d3e;
     margin: 10px 5px 0px 0px;
     border-radius: 0px 50px 50px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
 }
 
 .leftmenu p:not(.categorias-titulo) { 
@@ -371,6 +374,7 @@ a:active, a { color: black; }
 .leftmenu{
     border: 1px solid rgba(87, 87, 87, 0.945);
     border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 /* Footer */
@@ -425,12 +429,18 @@ label[for="checkGit"], #checkGit {
 
 label[for="checkGit"] img:hover{ opacity: 1; }
 
+label[for="checkGit"] img, .collaborators a, 
+#container-git-collaborators{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 label[for="checkGit"] img{
     opacity: 0.5;
     width: 50px;
     height: 50px;
-    transition: all 0.5s;
     border-radius: 70%;
+    -webkit-border-radius: 70%;
 }
 
 #container-git-collaborators{
@@ -438,7 +448,6 @@ label[for="checkGit"] img{
     max-width: 180px;
     display: block;
     padding: 0 0 0 5px;
-    transition: all 0.5s;
 }
  
 #git-collaborators-list{ margin: 0 15px 0 20px; }
@@ -455,8 +464,8 @@ label[for="checkGit"] img{
     padding: 5px;
     width: 25px;
     border-radius: 40px;
+    -webkit-border-radius: 40px;
     background-color: #171516;
-    transition: all 0.5s;
     transition-timing-function: ease;
     box-shadow: 1px 2px 5px 1px black;
 }
@@ -469,9 +478,10 @@ label[for="checkGit"] img{
 
 .collaborators img{
     transition: all 1s;
-    max-width: 35px;
-    max-height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 15px;
+    -webkit-border-radius: 15px;
 }
 
 .collaborators p{ 

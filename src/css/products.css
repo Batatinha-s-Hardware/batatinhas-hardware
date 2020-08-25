@@ -133,22 +133,52 @@ caption{
 }
 
 /*Estilizando a scrollbar do modal */
-.modal::-webkit-scrollbar, 
-.modal::-o-scrollbar,
+.modal::-webkit-scrollbar{
+    width: 5px;
+}
+
+ 
+.modal::-o-scrollbar{
+    width: 5px;
+}
+
+
 .modal::-ms-scrollbar{
     width: 5px;
 }
 
-.modal::-webkit-scrollbar-thumb,
-.modal::-o-scrollbar-thumb,
+
+.modal::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+
+.modal::-o-scrollbar-thumb{
+    width: 5px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+
 .modal::-ms-scrollbar-thumb{
     width: 5px;
     background: rgba(0,0,0,0.5);
     border-radius: 20px;
 }
 
-.modal::-webkit-scrollbar-thumb:hover,
-.modal::-o-scrollbar-thumb:hover,
+.modal::-webkit-scrollbar-thumb:hover{
+    background:rgba(0,0,0,0.8);
+}
+
+
+.modal::-o-scrollbar-thumb:hover
+{
+    background:rgba(0,0,0,0.8);
+}
+
+
 .modal::-ms-scrollbar-thumb:hover{
     background:rgba(0,0,0,0.8);
 }

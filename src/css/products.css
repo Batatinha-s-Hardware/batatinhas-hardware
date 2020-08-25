@@ -66,7 +66,13 @@ caption{
     border:1px solid #ccc;
     border-radius: 5px;
     height: 365px;
-    
+}
+
+.product-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .product-content img {

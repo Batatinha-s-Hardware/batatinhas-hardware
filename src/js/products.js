@@ -59,6 +59,8 @@ window.addEventListener("load",eventos);//Carrega os eventos
   $(function(){
     //carrega o menu na página
     $("#menu").load("../../html/menu.html");
+    
+    $("#header").load("../../html/header.html");
     //--------------------------------------------------
            $(window).scroll(function(){
          if($(this).scrollTop() > 250 && $(window).width()>600){

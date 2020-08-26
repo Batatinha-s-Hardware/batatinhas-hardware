@@ -25,13 +25,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url(./assets/home_img/logo_roxo_final.png), url(./assets/home_img/head_sem_logo_.png);
-    background-size: 170px, cover;
+    background-image: url(./assets/home_img/head_sem_logo_.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-color:#223330;
-
+    padding: 5px 0;
+    box-sizing: content-box;
 }
+
+header img{
+    width: 175px;
+    height: 175px;
+}
+
 .tela_pc{
     box-sizing: border-box;
     width: 350px;
@@ -221,12 +228,6 @@ input[type="radio"]:checked ~ .btn{box-shadow:none;}
 }
 
 .dotted.active{background: grey;}
-
-
-header img{
-    width: auto;
-    height: 150px;
-}
 
 /* Menu CSS */
 #check,#btn{ display: none; }

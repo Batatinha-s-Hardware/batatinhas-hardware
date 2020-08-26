@@ -177,7 +177,6 @@ header img{
     text-transform: uppercase;
     padding: 5px;
     cursor: pointer;
-    background:#223330;
     color: white;
 
 }
@@ -185,9 +184,9 @@ header img{
 .btn{
     color: white;
     display: block;
-    box-shadow: 5px 5px 5px grey;
     margin-left:15px;
-    transition: box-shadow 1s;
+    background:#111f1d;
+    margin-top:10px;
 }
 
 
@@ -215,7 +214,7 @@ input[type="radio"]{
 }
 
 input[type="radio"]:checked ~ .text{opacity: 1;}
-input[type="radio"]:checked ~ .btn{box-shadow:none;}
+input[type="radio"]:checked ~ .btn{background:#2da88d;}
 
 .dotted{
     background: white;

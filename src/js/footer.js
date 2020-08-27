@@ -10,14 +10,14 @@ const creatorsNames = [
 
 const creatorsgitImg = [
     "https://avatars2.githubusercontent.com/u/62577482?s=460&u=9cd418ac4c3ff1b1817567f32848c642fc5c4976&v=4",
-    "Lucas Zanesco",
+    "https://avatars1.githubusercontent.com/u/70103060?s=460&v=4",
     "https://avatars0.githubusercontent.com/u/64908399?s=460&u=cb6bc7163c5cbf01cbe06bca0237975c0d5e2928&v=4",
     "https://avatars3.githubusercontent.com/u/68129713?s=460&u=6a039f994ea8301c13882d58a490b975eece3585&v=4"
 ];
 
 const creatorsGit = [
     "https://github.com/Valdoveste", 
-    "https://github.com", 
+    "https://github.com/lucas-za", 
     "https://github.com/RafaelSantos1234", 
     "https://github.com/technical-student-Ricardo-Felix"
 ];

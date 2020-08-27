@@ -29,9 +29,9 @@ Criar um site de uma empresa fictícia composta por pelo menos 3 páginas HTML e
 |-|
 |Produtos|
 
-|Perifericos|Hardware|Computadores|Smartphones|
+|Perifericos|Hardware|Computadores|Portateis|
 |-|-|-|-|
-|Fone|Placa Mãe|Notebooks|-|
+|Fone|Placa Mãe|Notebooks|Smartphones|
 |Headshet|Placa de Video|Netbooks|-|
 |Mouse|HD & SSD|Impressoras|-|
 |Teclado|Processador|Tablets|-|

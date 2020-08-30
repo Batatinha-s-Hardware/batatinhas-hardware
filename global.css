@@ -435,7 +435,7 @@ footer{
 footer ul{ height: 100%; }
 
 footer ul , #Logo, .siga, 
-.collaborators, .collaborators a{ display: flex; }
+.collaborators, .collaborators a{ box-sizing: unset; display: flex; }
 
 footer ul , #Logo{ justify-content: space-between; }
 

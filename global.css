@@ -565,6 +565,28 @@ label[for="checkGit"] img{
     display: none;
  }
 
+ #assin{
+     width: 100%;
+     margin-top: 10px;
+     border-top: 1px dotted black;
+   /* height: 30px;*/
+    
+     
+ }
+#assin h3{
+    text-align: left;
+    margin-top:5px ;
+    font-size:12px;
+}
+ #assin ul{
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ #assin ul li{
+    font-size:10px;
+ }
+
 @media(max-width: 600px){
 
     footer ul , #Logo{ 

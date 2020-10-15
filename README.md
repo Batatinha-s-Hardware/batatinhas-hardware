@@ -1,6 +1,6 @@
 # batatinhas-hardware
 
-Projeto da ExpoSoft do curso de Técnico em TI, oferecido pela instituição de ensino [Prof.ª Alcina Dantas Feijão](http://www.alcinadantas.com.br/ti).
+Projeto da ExpoSoft do curso de Técnico em TI, oferecido pela instituição de ensino [EME Prof.ª Alcina Dantas Feijão](http://www.alcinadantas.com.br/ti).
 
 ## O que é a ExpoSoft?
 A [ExpoSoft](http://www.alcinadantas.com.br/exposoft) é um evento onde os alunos apresentam seus trabalhos de conclusão de módulo.
@@ -34,5 +34,5 @@ Criar um site de uma empresa fictícia composta por pelo menos 3 páginas HTML e
 |Fone|Placa Mãe|Notebooks|Smartphones|
 |Headshet|Placa de Video|Netbooks|-|
 |Mouse|HD & SSD|Impressoras|-|
-|Teclado|Processador|Tablets|-|
+|Teclado|Processador|-|-|
 |-|Memória RAM|-|-|

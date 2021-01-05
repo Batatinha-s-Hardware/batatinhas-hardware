@@ -36,3 +36,9 @@ Criar um site de uma empresa fictícia composta por pelo menos 3 páginas HTML e
 |Mouse|HD & SSD|Impressoras|-|
 |Teclado|Processador|-|-|
 |-|Memória RAM|-|-|
+
+# Informações Técnicas
+Documentos relacionados de Análise de Projetos e Sistemas.<br>
+[Batatinha-Análise de Requisitos do Site do Projeto.pdf](https://github.com/Batatinha-s-Hardware/batatinhas-hardware/files/5767702/Batatinha-Analise.de.Requisitos.do.Site.do.Projeto.pdf)
+<br>
+[Batatinhas Hardware - Efetivação de Venda.pdf](https://github.com/Batatinha-s-Hardware/batatinhas-hardware/files/5767703/Batatinhas.Hardware.-.Efetivacao.de.Venda.pdf)
